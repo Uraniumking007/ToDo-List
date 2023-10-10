@@ -1,14 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["*"],
+  content: ["./index.html", "./js/main.js"],
   theme: {
+    colors: {
+      primaryCustom: "#5a78ff",
+      secondaryCustom: "#0957ff",
+      darkGrayishBlue: "hsl(227, 12%, 61%)",
+      brightRed: "hsl(12, 88%, 59%)",
+    },
     extend: {
       colors: {
-        darkGrayishBlue: 'hsl(227, 12%, 61%)',
-        brightRed: 'hsl(12, 88%, 59%)',
-      }
+        primaryCustom: "#5a78ff",
+        secondaryCustom: "#0957ff",
+        darkGrayishBlue: "hsl(227, 12%, 61%)",
+        brightRed: "hsl(12, 88%, 59%)",
+      },
     },
   },
   plugins: [],
-}
-
+};
